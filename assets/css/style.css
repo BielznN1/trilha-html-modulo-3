@@ -8,8 +8,9 @@ a { color:blue; text-decoration: none;}
 a:hover{
     transition: linear 0.2s;
     color: red;
+    text-decoration: underline red;
 }
-hr {
+#espacamento {
     background-color: #f9f9fb;
     padding:15px;
     border-top: solid 1px #cdcdcd;
@@ -39,9 +40,11 @@ footer {
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
-#capa {
+
+figure{
     text-align: center;
 }
+
 
 .personagem{
     color: red;
