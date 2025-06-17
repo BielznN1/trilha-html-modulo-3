@@ -225,3 +225,8 @@ footer a:hover{
     background: lightgray;
     color: aqua;
 }
+
+
+footer{
+    background: linear-gradient(to top,lightgray,  whitesmoke 90%, white);
+}
