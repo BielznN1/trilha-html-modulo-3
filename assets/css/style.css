@@ -1,10 +1,137 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html{
+    scroll-behavior: smooth;
 }
-ul { list-style: none; padding-left: 5px; text-decoration: underline blue;}
-a { color:blue; text-decoration: none;}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+
+
+.logo{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+header{
+    background: linear-gradient( 45deg, lightgray , whitesmoke 70%) ;
+}
+
+
+ul { 
+    list-style: none; 
+    padding-left: 5px;
+}
+
+/*Titulos*/
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+    background: linear-gradient( 89deg, lightgray , whitesmoke 70%);
+   
+}
+
+.sidebar h2{
+    margin-left: 1rem;
+}
+
+.sidebar li{
+    display: flex;
+    background: black;
+    width: 206px;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-left: 0.5rem;
+    
+
+
+}
+
+.sidebar a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.sidebar ul{
+    display: grid;
+    gap: 5px;
+
+}
+
+.sidebar li:hover{
+    background: rgb(88, 88, 88);
+    transition: 0.2s;
+}
+
+.sidebar a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/* Neste Artigo */
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+    background: linear-gradient( 272deg, lightgray , whitesmoke 70%)    
+}
+.anchors li{
+    display: flex;
+    background: black;
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-right: 0.5rem;
+}
+
+.anchors li:hover{
+    background: rgb(88, 88, 88);
+    transition: 0.2s;
+}
+
+
+.anchors a{
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchors a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.anchors ul{
+    display: grid;
+    gap: 5px;
+}
+
+/* Links dentro do Texto */
+
+a { 
+    color: blue; text-decoration: none;
+}
+
 a:hover{
     transition: linear 0.2s;
     color: red;
@@ -15,7 +142,10 @@ a:hover{
     padding:15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
+    margin: 0;
 }
+
+/* Conteúdo Principal */
 main {
     max-width: 1440px;
     margin: auto;
@@ -24,27 +154,24 @@ main {
     gap: 3rem;
     grid-template-areas: "sidebar main anchors";
     grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    
     
 }
+
+/* Rodapé */
+
 footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
 }
-.anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
-    
-}
-.sidebar {
-    border-right: solid 1px #cdcdcd;
-}
+
+/*Fotos*/
 
 figure{
     text-align: center;
 }
 
+/*Links referentes a Personagens */
 
 .personagem{
     color: red;
@@ -54,3 +181,47 @@ figure{
     color: blue;
 }
 
+footer{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    justify-content: space-around;
+    
+    
+    
+
+    
+}
+
+footer li{
+    font-size: 50px;
+}
+
+footer a{
+    display: grid;
+    color: rgb(145, 145, 145);
+    text-decoration: none;
+    border-radius: 50px; 
+    transition: all 0.2s ease;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+footer a:hover{
+    background: lightgray;
+    color: aqua;
+}
